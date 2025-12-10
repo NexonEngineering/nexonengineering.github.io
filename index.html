@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NEXON Engineering Services — Home</title>
+
+  <!-- Tailwind and theme config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            frost: "#E1F5FE",
+            navy: "#0A2463",
+            indigo: "#3E5C76",
+            royal: "#1E88E5",
+            pearl: "#F8F9FA",
+          }
+        }
+      }
+    }
+  </script>
+   <style>
+  /* Logo fade-in + floating animation */
+  @keyframes logoFloat {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes logoFadeIn {
+    0%   { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  #main-logo {
+    animation: logoFadeIn 1.8s ease-out forwards,
+               logoFloat 4.5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+  }
+
+  /* Hover effect */
+  #main-logo:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+  <!-- Feather icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="bg-pearl font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center">
+        <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png" alt="Nexon" class="h-12" />
+      </a>
+
+      <div class="hidden md:flex space-x-8 text-pearl font-medium">
+        <a href="about.html" class="hover:text-royal">About</a>
+        <a href="services.html" class="hover:text-royal">Services</a>
+        <a href="projects.html" class="hover:text-royal">Projects</a>
+        <a href="contact.html" class="hover:text-royal">Contact</a>
+        <a href="our-clients.html">Our Clients</a>
+      </div>
+
+      <button id="mobile-btn" class="md:hidden text-pearl">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-navy/90 text-pearl px-6 py-4 space-y-4 md:hidden">
+      <a href="about.html" class="block">About</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="projects.html" class="block">Projects</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative h-screen flex items-center justify-center bg-gradient-to-b from-royal to-navy overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <div id="particles-js" class="w-full h-full"></div>
+    </div>
+
+    <div id="hero-content" class="text-center z-10 transition-all duration-500">
+      <img id="main-logo"
+           src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png"
+           alt="NEXON Logo"
+           class="w-80 mx-auto mb-8 logo-transition" />
+
+      <h1 class="text-5xl font-bold text-pearl mb-4">
+        Engineering Innovation with Precision
+      </h1>
+
+      <a href="about.html"
+         class="inline-block mt-8 px-8 py-3 bg-royal hover:bg-indigo text-pearl rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-royal/50">
+        Explore More
+      </a>
+    </div>
+
+    <div class="absolute bottom-10 left-0 right-0 text-center animate-bounce">
+      <i data-feather="chevron-down" class="w-10 h-10 text-pearl mx-auto"></i>
+    </div>
+  </section>
+
+  <!-- OPTIONAL: small about preview same as original -->
+  <section id="about-preview" class="py-16 bg-gradient-to-b from-navy to-indigo">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-10 lg:mb-0 fade-in-left">
+          <h2 class="text-4xl font-bold text-pearl mb-6">About NEXON Engineering</h2>
+          <p class="text-frost mb-6 text-lg leading-relaxed">Founded in 2005, NEXON Engineering Services has been at the forefront of innovative engineering solutions...</p>
+          <a href="about.html" class="inline-block mt-2 text-royal hover:underline">Read more →</a>
+        </div>
+        <div class="lg:w-1/2 fade-in-right">
+          <img src="http://static.photos/technology/1024x576/42" alt="about image" class="rounded-xl shadow-2xl border-4 border-royal/50 w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-pearl py-16">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png" class="h-20 mb-4" alt="Nexon logo"/>
+        <p class="text-frost leading-relaxed">Nexon Engineering Innovation since 2005.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="about.html" class="hover:text-royal">About Us</a></li>
+          <li><a href="services.html" class="hover:text-royal">Our Services</a></li>
+          <li><a href="projects.html" class="hover:text-royal">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-royal">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li>Industrial Automation</li>
+          <li>Mechanical Design</li>
+          <li>Energy Solutions</li>
+          <li>Consulting</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Contact</h3>
+        <p>123 Tech Park, Silicon Valley</p>
+        <p>contact@nexonengineering.com</p>
+        <p>+1 (555) 123-4567</p>
+      </div>
+    </div>
+
+    <div class="text-center text-frost mt-12">© 2025 NEXON Engineering Services (Pvt) Ltd. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>

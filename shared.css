@@ -1,0 +1,67 @@
+/* shared.css - custom styles + animations (works with Tailwind classes used) */
+
+/* Basic spacing container callback to maintain the same look as before */
+.container {
+  max-width: 1200px;
+}
+
+/* Animation helpers (used by pages) */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s ease-out;
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.service-card,
+.project-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.service-card.show,
+.project-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-transition {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: transform 1.2s ease, opacity 1s ease;
+}
+.logo-transition.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#hero-content {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+/* Utility classes for consistent spacing + layout fallback for non-tailwind users */
+html, body {
+  height: 100%;
+}
+
+/* Fine-tune specific classes from original */
+.hero-section .main-logo {
+  max-width: 24rem;
+}
+
+/* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
+/* End of shared.css */
