@@ -65,41 +65,66 @@ html, body {
 
 .whatsapp-float {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 28px;
+  right: 28px;
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #0b1f4a; /* Dark navy to match your site */
-  color: #ffffff;
-  padding: 12px 16px;
+  padding: 12px 18px;
   border-radius: 50px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(135deg, #1e3c72, #2a6fd6);
+  color: #ffffff;
   font-weight: 600;
   font-size: 14px;
-  z-index: 9999;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateX(120%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
-.whatsapp-float img {
-  width: 34px;
-  height: 34px;
-  background: #25d366; /* WhatsApp green badge */
+/* When visible */
+.whatsapp-float.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* WhatsApp icon */
+.whatsapp-icon {
+  width: 38px;
+  height: 38px;
+  background: #25d366;
   border-radius: 50%;
-  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2.5s infinite;
+}
+
+.whatsapp-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
 .whatsapp-float:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  transform: translateX(0) translateY(-4px);
 }
 
-.whatsapp-text {
-  white-space: nowrap;
-}
-
-/* Mobile: show icon only */
+/* Mobile: icon only */
 @media (max-width: 640px) {
   .whatsapp-text {
     display: none;
@@ -107,7 +132,9 @@ html, body {
 }
 
 
+
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
