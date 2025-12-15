@@ -63,5 +63,47 @@ html, body {
   max-width: 24rem;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 36px;
+  height: 36px;
+}
+
+.whatsapp-text {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
+/* Mobile view: icon only */
+@media (max-width: 640px) {
+  .whatsapp-text {
+    display: none;
+  }
+}
+
+
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
