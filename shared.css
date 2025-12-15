@@ -70,33 +70,36 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #25d366;
-  color: white;
-  padding: 10px 14px;
+  background: #0b1f4a; /* Dark navy to match your site */
+  color: #ffffff;
+  padding: 12px 16px;
   border-radius: 50px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   font-weight: 600;
+  font-size: 14px;
   z-index: 9999;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .whatsapp-float img {
-  width: 36px;
-  height: 36px;
-}
-
-.whatsapp-text {
-  white-space: nowrap;
-  font-size: 14px;
+  width: 34px;
+  height: 34px;
+  background: #25d366; /* WhatsApp green badge */
+  border-radius: 50%;
+  padding: 6px;
 }
 
 .whatsapp-float:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
 }
 
-/* Mobile view: icon only */
+.whatsapp-text {
+  white-space: nowrap;
+}
+
+/* Mobile: show icon only */
 @media (max-width: 640px) {
   .whatsapp-text {
     display: none;
@@ -106,4 +109,5 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
