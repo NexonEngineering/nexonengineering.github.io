@@ -125,12 +125,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-<script>
-  setTimeout(() => {
-    const wa = document.querySelector('.whatsapp-float');
-    wa.classList.remove('hidden');
-    wa.classList.add('show');
-  }, 5000);
-</script>
+
 
 
