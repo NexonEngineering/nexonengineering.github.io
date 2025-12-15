@@ -216,12 +216,41 @@
   </div>
 </footer>
 
+  <a
+  href="https://wa.me/94773753621?text=Hello%20Nexon%20Engineering,%20I%20need%20assistance."
+  target="_blank"
+  class="whatsapp-float"
+  class="whatsapp-float hidden"
+  aria-label="WhatsApp Chat"
+>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+    alt="WhatsApp"
+  />
+  <span class="whatsapp-icon">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    />
+  </span>
+  <span class="whatsapp-text">How can I help you?</span>
+</a>
+
+script>
+  setTimeout(() => {
+    const wa = document.querySelector('.whatsapp-float');
+    wa.classList.remove('hidden');
+    wa.classList.add('show');
+  }, 5000);
+</script>
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts.js"></script>
   <script>feather.replace();</script>
 </body>
 </html>
+
 
 
 
