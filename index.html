@@ -127,94 +127,102 @@
     </div>
   </section>
 
-  <!-- FOOTER: updated to match provided layout -->
   <footer class="bg-navy text-pearl py-16">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
-      <!-- Column 1: Logo + description + certification bar -->
-      <div>
-        <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png" class="h-20 mb-4" alt="Nexon logo"/>
-        <p class="text-frost leading-relaxed mb-4 max-w-md">
-          Nexon Engineering provides industrial repair, maintenance and automation solutions across residential, commercial and industrial projects. We deliver safe, dependable engineering services with an emphasis on reliability and efficiency.
-        </p>
+  <!-- Wider container -->
+  <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
 
+    <!-- Column 1: Logo & Description -->
+    <div class="md:col-span-1">
+      <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png"
+           class="h-20 mb-4" alt="Nexon logo"/>
 
-      <!-- Column 2: Quick Links -->
-     <br/> <div>
-        <div class="footer-heading text-pearl text-xl"><u>QUICK LINKS</u></div>
-        <div class="footer-underline"></div>
+      <p class="text-frost leading-relaxed max-w-sm">
+        Nexon Engineering provides industrial repair, maintenance and automation
+        solutions across residential, commercial and industrial projects.
+        We deliver safe, dependable engineering services with an emphasis on
+        reliability and efficiency.
+      </p>
+    </div>
 
-        <ul class="space-y-3 mt-3 text-frost">
-          <li class="footer-link"><span class="chev">›</span><a href="about.html" class="hover:text-royal">About Us</a></li>
-          <li class="footer-link"><span class="chev">›</span><a href="services.html" class="hover:text-royal">Products / Services</a></li>
-          <li class="footer-link"><span class="chev">›</span><a href="projects.html" class="hover:text-royal">Projects</a></li>
-          <li class="footer-link"><span class="chev">›</span><a href="contact.html" class="hover:text-royal">Contact</a></li>
-          <li class="footer-link"><span class="chev">›</span><a href="privacy.html" class="hover:text-royal">Privacy Policy</a></li>
-        </ul>
-      </div>
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-xl text-pearl font-semibold underline mb-4">QUICK LINKS</h3>
+      <ul class="space-y-3 text-frost">
+        <li>› <a href="about.html" class="hover:text-royal">About Us</a></li>
+        <li>› <a href="services.html" class="hover:text-royal">Services</a></li>
+        <li>› <a href="projects.html" class="hover:text-royal">Projects</a></li>
+        <li>› <a href="contact.html" class="hover:text-royal">Contact</a></li>
+        <li>› <a href="privacy.html" class="hover:text-royal">Privacy Policy</a></li>
+      </ul>
+    </div>
 
-      <!-- Column 3: Contact -->
-      <div>
-        <div class="footer-heading text-pearl text-xl">CONTACT US</div>
-        <div class="footer-underline"></div>
+    <!-- Column 3: Contact -->
+    <div>
+      <h3 class="text-xl text-pearl font-semibold mb-4">CONTACT US</h3>
 
-        <div class="mt-4 text-frost space-y-4">
-          <div class="flex items-start gap-3">
-            <i data-feather="map-pin" class="text-royal mt-1"></i>
-            <div>WVP9+FGX, Colombo 01000,<br/>Colombo 10, Sri Lanka</div>
-          </div>
-
-          <div class="flex items-start gap-3">
-            <i data-feather="mail" class="text-royal mt-1"></i>
-            <div><a href="https://mail.google.com/mail/u/0/?fs=1&to=nexonengineering.service@gmail.com&tf=cm" class="hover:text-royal">nexonengineering.service@gmail.com</a></div>
-          </div>
-
-          <div class="flex items-start gap-3">
-            <i data-feather="phone" class="text-royal mt-1"></i>
-             <a href="tel:+94773753621" class="flex items-center space-x-4"></a>
-            <div>+94 77 375 3621</div>
-          </div>
-
-          <div class="mt-4">
-            <a class="social-btn" href="#" aria-label="facebook"><i data-feather="facebook" class="text-pearl"></i></a>
-            <a class="social-btn" href="#" aria-label="linkedin"><i data-feather="linkedin" class="text-pearl"></i></a>
-            <a class="social-btn" href="#" aria-label="instagram"><i data-feather="instagram" class="text-pearl"></i></a>
-            <a class="social-btn" href="#" aria-label="youtube"><i data-feather="youtube" class="text-pearl"></i></a>
-          </div>
+      <div class="space-y-4 text-frost">
+        <div class="flex gap-3">
+          <i data-feather="map-pin" class="text-royal"></i>
+          <span>WVP9+FGX, Colombo 01000,<br>Colombo 10, Sri Lanka</span>
         </div>
-      </div>
 
-      <!-- Column 4: Facebook widget -->
-      <div>
-        <div class="footer-heading text-pearl text-xl">FACEBOOK</div>
-        <div class="footer-underline"></div>
+        <div class="flex items-start gap-3">
+  <i data-feather="mail" class="text-royal mt-1"></i>
+  <a href="mailto:nexonengineering.service@gmail.com"
+     class="hover:text-royal break-all">
+    nexonengineering.service@gmail.com
+  </a>
+</div>
 
-        <div class="mt-4">
-          <!-- Facebook Page Plugin: replace href param with your page URL -->
-          <div class="fb-box">
-            <!-- Using Facebook Page Plugin iframe. Update the href query param to your FB page URL. -->
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHayleysSolar&tabs=timeline&width=320&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId="
-              width="320"
-              height="300"
-              style="border:none;overflow:hidden"
-              scrolling="no"
-              frameborder="0"
-              allowTransparency="true"
-              allow="encrypted-media">
-            </iframe>
-          </div>
+
+        <div class="flex gap-3">
+          <i data-feather="phone" class="text-royal"></i>
+          <a href="tel:+94773753621" class="hover:text-royal">
+            +94 77 375 3621
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="hover:text-royal"><i data-feather="facebook"></i></a>
+          <a href="#" class="hover:text-royal"><i data-feather="linkedin"></i></a>
+          <a href="#" class="hover:text-royal"><i data-feather="instagram"></i></a>
+          <a href="#" class="hover:text-royal"><i data-feather="youtube"></i></a>
         </div>
       </div>
     </div>
 
-    <div class="text-center text-frost mt-12">© 2025 NEXON Engineering Services (Pvt) Ltd. All rights reserved.</div>
-  </footer>
+    <!-- Column 4: Facebook -->
+    <div>
+      <h3 class="text-xl text-pearl font-semibold mb-4">FACEBOOK</h3>
+
+      <div class="w-full overflow-hidden rounded-lg">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FHayleysSolar&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+          class="w-full h-[300px]"
+          style="border:none;overflow:hidden"
+          scrolling="no"
+          frameborder="0"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom copyright -->
+  <div class="text-center text-frost mt-12 border-t border-white/10 pt-6">
+    © 2025 NEXON Engineering Services (Pvt) Ltd. All rights reserved.
+  </div>
+</footer>
+  
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts.js"></script>
   <script>feather.replace();</script>
 </body>
 </html>
+
 
 
 
