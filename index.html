@@ -218,18 +218,36 @@
 </footer>
 
  
-<a href="https://wa.me/+94773753621" 
-   class="whatsapp-float" 
-   target="_blank"
-   aria-label="Chat on WhatsApp">
+<div class="whatsapp-wrapper" id="whatsappWidget">
 
-  <div class="whatsapp-text">How can I help you?</div>
-
-  <div class="whatsapp-icon">
-    <img src="images/whatsapp.png" alt="WhatsApp">
+  <div class="whatsapp-text">
+    How can I help you?
   </div>
 
-</a>
+  <a href="https://wa.me/+94773753621"
+     target="_blank"
+     class="whatsapp-icon"
+     aria-label="Chat on WhatsApp">
+     
+     <img src="https://raw.githubusercontent.com/NexonEngineering/nexonengineering.github.io/refs/heads/main/whatsapp-vector-logo-icon-logotype-vector-social-media_901408-406.avif" alt="WhatsApp">
+  </a>
+
+</div>
+  <script>
+  const whatsappWidget = document.getElementById("whatsappWidget");
+
+  // Open on click
+  whatsappWidget.addEventListener("click", () => {
+    whatsappWidget.classList.toggle("active");
+  });
+
+  // Auto open after 5 seconds
+  setTimeout(() => {
+    whatsappWidget.classList.add("active");
+  }, 5000);
+</script>
+
+
 
   
 
@@ -239,6 +257,7 @@
   <script>feather.replace();</script>
 </body>
 </html>
+
 
 
 
