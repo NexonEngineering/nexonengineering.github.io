@@ -132,6 +132,9 @@ html, body {
 .whatsapp-btn img {
   filter: brightness(0.7);
 }
+.whatsapp-float:hover .whatsapp-btn img {
+  filter: brightness(50);
+}
 
 
 
@@ -141,6 +144,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
