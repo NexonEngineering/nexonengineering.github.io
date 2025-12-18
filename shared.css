@@ -148,6 +148,21 @@ html, body {
 .whatsapp-float:hover .whatsapp-btn img {
   filter: brightness(2);
 }
+.company-name {
+  color: #ffffff;        /* white text */
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;   /* prevents breaking into two lines */
+}
+
+.about-page .company-name,
+.services-page .company-name,
+.projects-page .company-name,
+.contact-page .company-name,
+.our-client-page .company-name {
+    color: navy !important; /* Tailwind override */
+}
 
 
 
@@ -157,6 +172,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
