@@ -123,6 +123,16 @@ html, body {
   transform: scale(1.08);
 }
 
+/* Dark WhatsApp button (Nexon style) */
+.whatsapp-btn {
+  background: #0d47a1; /* Nexon dark blue */
+}
+
+/* Darken the WhatsApp logo */
+.whatsapp-btn img {
+  filter: brightness(0.7);
+}
+
 
 
 
@@ -131,6 +141,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
