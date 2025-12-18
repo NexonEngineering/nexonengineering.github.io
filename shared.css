@@ -47,6 +47,19 @@
   opacity: 1;
   transform: scale(1);
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;              /* space between logo & text */
+}
+
+.company-name {
+  color: #ffffff;        /* white text */
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;   /* prevents breaking into two lines */
+}
 
 #hero-content {
   opacity: 0;
@@ -144,6 +157,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
