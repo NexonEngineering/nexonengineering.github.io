@@ -175,10 +175,16 @@ html, body {
     rgba(13, 37, 97, 1) 100%
   );
 }
-
-.projects-page footer {
-  padding-top: 80px;
-  box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.35);
+.projects-page .section-divider {
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 55%,
+    #0d2561 55%,
+    #0d2561 100%
+  );
+}
 
 
 
@@ -192,6 +198,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
