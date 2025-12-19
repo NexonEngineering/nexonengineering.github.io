@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — NEXON Engineering Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            frost: "#E1F5FE",
+            navy: "#0A2463",
+            indigo: "#3E5C76",
+            royal: "#1E88E5",
+            pearl: "#F8F9FA",
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="shared.css">
+</head>
+
+<body class="bg-pearl" class="projects-page">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center">
+        <div class="logo">
+        <img src="https://raw.githubusercontent.com/NexonEngineering/nexonengineering.github.io/refs/heads/main/Gemini_Generated_Image_68tq6v68tq6v68tqdfdsgfsg-Photoroom.png" alt="Nexon" class="h-12" />
+       <span class="company-name text-[#0D2561] font-semibold hover:text-blue-800 transition-colors duration-300">
+           NEXON ENGINEERING SERVICES (PVT) LTD
+       </span>
+
+          </div>
+      </a>
+
+
+      <div class="hidden md:flex space-x-8 text-navy font-medium">
+        <a href="about.html" class="hover:text-royal">About</a>
+        <a href="services.html" class="hover:text-royal">Services</a>
+        <a href="projects.html" class="text-royal">Projects</a>
+        <a href="contact.html" class="hover:text-royal">Contact</a>
+        <a href="our-clients.html">Our Clients</a>
+      </div>
+
+      <button id="mobile-btn" class="md:hidden text-navy">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-navy/90 text-pearl px-6 py-4 space-y-4 md:hidden">
+      <a href="about.html" class="block">About</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="projects.html" class="block">Projects</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="pt-32 pb-10 bg-pearl text-center">
+    <h1 class="text-4xl font-bold text-navy">Our Projects</h1>
+    <p class="text-indigo mt-4">Selected work and case studies</p>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-12 bg-gradient-to-b from-indigo to-navy">
+    <div class="container mx-auto px-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Existing Project 1 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/industry/640x360/101"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Automated Factory System</p>
+            <p class="text-sm text-navy mt-2">PLC-driven automation for assembly lines.</p>
+          </div>
+        </div>
+
+        <!-- Existing Project 2 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/construction/640x360/102"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">High-Rise HVAC Design</p>
+            <p class="text-sm text-navy mt-2">Efficient climate control systems for large towers.</p>
+          </div>
+        </div>
+
+        <!-- Existing Project 3 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/technology/640x360/103"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Renewable Energy Plant</p>
+            <p class="text-sm text-navy mt-2">Hybrid solar & wind facility design.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 1 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/industry/640x360/121"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Smart Warehouse Automation</p>
+            <p class="text-sm text-navy mt-2">Robotics, conveyor integration & IoT monitoring systems.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 2 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/energy/640x360/122"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Solar Power Plant Installation</p>
+            <p class="text-sm text-navy mt-2">5MW solar farm with remote monitoring.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 3 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/machines/640x360/123"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">CNC Retrofit Upgrade</p>
+            <p class="text-sm text-navy mt-2">Old CNC upgraded with new controllers and automation.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 4 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/water/640x360/124"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Water Treatment Automation</p>
+            <p class="text-sm text-navy mt-2">SCADA system for water purification facility.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 5 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/robots/640x360/125"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Robotics Integration Cell</p>
+            <p class="text-sm text-navy mt-2">Pick-and-place robotic arm installed for packaging line.</p>
+          </div>
+        </div>
+
+        <!-- NEW PROJECT 6 -->
+        <div class="project-item group overflow-hidden rounded-lg shadow-lg">
+          <div class="relative h-64 overflow-hidden">
+            <img src="http://static.photos/electrical/640x360/126"
+                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          </div>
+          <div class="bg-pearl p-4">
+            <p class="text-indigo">Industrial Safety Upgrade</p>
+            <p class="text-sm text-navy mt-2">Safety interlock, emergency controls & compliance systems.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-pearl py-16 mt-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png" class="h-20 mb-4" />
+        <p class="text-frost leading-relaxed">Engineering Innovation with Precision since 2005.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="about.html" class="hover:text-royal">About Us</a></li>
+          <li><a href="services.html" class="hover:text-royal">Our Services</a></li>
+          <li><a href="projects.html" class="hover:text-royal">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-royal">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li>Industrial Automation</li>
+          <li>Mechanical Design</li>
+          <li>Energy Solutions</li>
+          <li>Consulting</li>
+          <li>Panel Manufacturing</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Contact</h3>
+         <p>WVP9+FGX, Colombo 01000</p>
+        <p>nexonengineering.service@gmail.com</p>
+        <p>+94 77 373 621</p>
+      </div>
+    </div>
+
+    <div class="text-center text-frost mt-12">© 2025 NEXON Engineering Services (Pvt) Ltd. All rights reserved.</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>feather.replace();</script>
+
+</body>
+</html>
+

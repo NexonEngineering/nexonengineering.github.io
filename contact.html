@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — NEXON Engineering Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            frost: "#E1F5FE",
+            navy: "#0A2463",
+            indigo: "#3E5C76",
+            royal: "#1E88E5",
+            pearl: "#F8F9FA",
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="shared.css">
+</head>
+
+<body class="bg-pearl" class="contact-page">
+
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center">
+        <div class="logo">
+        <img src="https://raw.githubusercontent.com/NexonEngineering/nexonengineering.github.io/refs/heads/main/Gemini_Generated_Image_68tq6v68tq6v68tqdfdsgfsg-Photoroom.png" alt="Nexon" class="h-12" />
+       <span class="company-name text-[#0D2561] font-semibold hover:text-blue-800 transition-colors duration-300">
+           NEXON ENGINEERING SERVICES (PVT) LTD
+       </span>
+
+          </div>
+      </a>
+
+
+      <div class="hidden md:flex space-x-8 text-navy font-medium">
+        <a href="about.html" class="hover:text-royal">About</a>
+        <a href="services.html" class="hover:text-royal">Services</a>
+        <a href="projects.html" class="hover:text-royal">Projects</a>
+        <a href="contact.html" class="text-royal">Contact</a>
+        <a href="our-clients.html">Our Clients</a>
+      </div>
+
+      <button id="mobile-btn" class="md:hidden text-navy">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-navy/90 text-pearl px-6 py-4 space-y-4 md:hidden">
+      <a href="about.html" class="block">About</a>
+      <a href="services.html" class="block">Services</a>
+      <a href="projects.html" class="block">Projects</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <!-- HERO -->
+  <section class="pt-32 pb-16 bg-pearl text-center fade-in-left">
+    <h1 class="text-4xl font-bold text-navy">Get In Touch</h1>
+    <p class="text-indigo mt-4">We're here to assist you with your engineering needs</p>
+  </section>
+
+  <!-- Contact content -->
+  <section id="contact" class="py-20 bg-pearl">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+    <!-- CONTACT INFO ON LEFT -->
+     <div class="space-y-10 fade-in-left">
+
+        <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+          <h3 class="text-xl font-bold text-navy mb-3">Contact Info</h3>
+          <p class="text-indigo">Have a project in mind or want to learn more about our services? Contact our team today</p>
+        </div>
+
+              <!-- Google Maps (Styled Card Like Screenshot) -->
+                <div class="bg-white shadow-xl p-6 rounded-2xl hover:-translate-y-1 transition">
+                   <h2 class="text-2xl font-bold text-navy mb-4">Find Us on the Map</h2>
+
+              <div class="rounded-xl overflow-hidden shadow-md border border-gray-200">
+                  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.870616961384!2d79.8684326!3d6.9362382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259006bbccfdf%3A0xbef807aa2f3a58e3!2sRiyaza%20home!5e0!3m2!1sen!2slk!4v1733299999999!5m2!1sen!2slk"
+              width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+
+                 </div>
+             </div>
+
+
+        <div class="space-y-6 mt-10">
+
+    <!-- Email → Opens Gmail directly -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nexonengineering.service@gmail.com"
+       target="_blank" class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="mail" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">nexonengineering.service@gmail.com</p>
+    </a>
+
+    <!-- Phone → Click to Call -->
+    <a href="tel:+94773753621" class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="phone" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">+94 77 375 3621</p>
+    </a>
+
+    <!-- WhatsApp → Direct WhatsApp Chat -->
+    <a href="https://wa.me/0773753621" target="_blank" class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="message-circle" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">Chat on WhatsApp</p>
+    </a>
+
+    <!-- Location → Opens Google Maps -->
+    <a href="https://www.google.com/maps/place/WVP9%2BFGX,+Colombo+01000"
+       target="_blank" class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="map-pin" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">WVP9+FGX, Colombo 01000</p>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/nexonengineering" target="_blank"
+       class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="instagram" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">@nexonengineering</p>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/nexonengineering" target="_blank"
+       class="flex items-center space-x-4">
+      <div class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition">
+        <i data-feather="facebook" class="text-royal w-6 h-6"></i>
+      </div>
+      <p class="text-navy text-lg">facebook.com/nexonengineering</p>
+    </a>
+
+</div>
+
+    </div>
+
+   
+<!-- FORM ON RIGHT (BIG + LOWERED) -->
+<div class="w-full max-w-2xl ml-auto mt-20">
+  <form class="bg-white shadow-lg p-6 rounded-xl hover:-translate-y-1 transition"
+        id="contact-form">
+
+    <div class="mb-6">
+      <label for="name" class="block text-indigo mb-2 font-medium">Your Name</label>
+      <input type="text" id="name" class="w-full px-4 py-3 border border-frost rounded-xl focus:outline-none focus:ring-2 focus:ring-royal">
+    </div>
+
+    <div class="mb-6">
+      <label for="email" class="block text-indigo mb-2 font-medium">Email Address</label>
+      <input type="email" id="email" class="w-full px-4 py-3 border border-frost rounded-xl focus:outline-none focus:ring-2 focus:ring-royal">
+    </div>
+
+    <div class="mb-6">
+      <label for="message" class="block text-indigo mb-2 font-medium">Your Message</label>
+      <textarea id="message" rows="6" class="w-full px-4 py-3 border border-frost rounded-xl focus:outline-none focus:ring-2 focus:ring-royal"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-royal hover:bg-navy text-pearl py-4 px-6 rounded-xl text-lg transition-all duration-300">
+      Send Message
+    </button>
+  </form>
+</div>
+
+
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-pearl py-16 mt-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div>
+        <img src="https://huggingface.co/spaces/Ruzkhan/nexon-engineering-nexus/resolve/main/images/download.png" class="h-20 mb-4" alt="logo"/>
+        <p class="text-frost leading-relaxed">Engineering Innovation with Precision since 2005.</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="about.html" class="hover:text-royal">About Us</a></li>
+          <li><a href="services.html" class="hover:text-royal">Our Services</a></li>
+          <li><a href="projects.html" class="hover:text-royal">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-royal">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li>Industrial Automation</li>
+          <li>Mechanical Design</li>
+          <li>Energy Solutions</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-xl mb-4">Contact</h3>
+         <p>WVP9+FGX, Colombo 01000</p>
+        <p>nexonengineering.service@gmail.com</p>
+        <p>+94 77 373 621</p>
+      </div>
+    </div>
+
+    <div class="text-center text-frost mt-12">© 2025 NEXON Engineering Services (Pvt) Ltd. All rights reserved.</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>feather.replace();</script>
+
+  <!-- Success Popup -->
+<div id="success-popup" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden">
+  <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+    <h2 class="text-2xl font-bold text-navy mb-3">Message Sent!</h2>
+    <p class="text-indigo mb-6">Our team will get back to you shortly.</p>
+
+    <button onclick="closePopup()" 
+            class="bg-royal text-white px-6 py-3 rounded-xl hover:bg-blue-600 transition">
+      OK
+    </button>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('success-popup').classList.remove('hidden');
+    form.reset();
+  });
+
+  function closePopup() {
+    document.getElementById('success-popup').classList.add('hidden');
+  }
+</script>
+</body>
+</html>
+
+
+
