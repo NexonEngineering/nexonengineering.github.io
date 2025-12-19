@@ -164,6 +164,11 @@ html, body {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+}
+footer {
+  margin-top: 100px;
+  border-top: 4px solid rgba(255, 255, 255, 0.15);
+}
 
 
 
@@ -175,6 +180,7 @@ html, body {
 
 /* Mobile menu hidden state - handled by JS toggling the 'hidden' class */
 /* End of shared.css */
+
 
 
 
