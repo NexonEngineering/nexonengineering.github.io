@@ -56,7 +56,7 @@
 </head>
 <body class="bg-pearl font-sans antialiased">
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
   <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
     <div class="container mx-auto px-6 py-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center">
@@ -69,7 +69,7 @@
           </div>
       </a>
 
-      <div class="hidden md:flex space-x-8 text-pearl font-medium">
+      <div class="hidden md:flex space-x-8 text-pearl font-medium nav-links">
         <a href="about.html" class="hover:text-[#8FC1FA]">About</a>
         <a href="services.html" class="hover:text-[#8FC1FA]">Services</a>
         <a href="projects.html" class="hover:text-[#8FC1FA]">Projects</a>
@@ -90,6 +90,51 @@
       <a href="our-clients.html" class="block">Our Clients</a>
     </div>
   </nav>
+
+
+<style>
+  /* =========================
+   DESKTOP NAV LINKS
+========================= */
+.nav-links a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+/* Text color on hover */
+.nav-links a:hover {
+  color: #8FC1FA;
+}
+
+/* Underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #8FC1FA;
+  transition: width 0.3s ease;
+}
+
+/* Animate underline */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   MOBILE NAV LINKS
+========================= */
+#mobile-menu a:hover {
+  color: #8FC1FA;
+}
+
+</style>
+
 
   <!-- HERO -->
   <section class="relative h-screen flex items-center justify-center bg-gradient-to-b from-royal to-navy overflow-hidden">
@@ -113,9 +158,10 @@
       </a>
     </div>
 
-    <div class="absolute bottom-10 left-0 right-0 text-center animate-bounce">
-      <i data-feather="chevron-down" class="w-10 h-10 text-pearl mx-auto"></i>
-    </div>
+    <div class="absolute bottom-20 left-0 right-0 text-center animate-bounce">
+  <i data-feather="chevron-down" class="w-10 h-10 text-pearl mx-auto"></i>
+</div>
+
   </section>
 
   <!-- OPTIONAL: small about preview same as original -->
@@ -262,5 +308,4 @@
   <script>feather.replace();</script>
 </body>
 </html>
-
 
